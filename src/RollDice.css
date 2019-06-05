@@ -1,0 +1,46 @@
+.dice {
+  display: flex;
+  justify-content: space-around;
+}
+.btn-roll {
+  display: inline-block;
+  background-color: blueviolet;
+  text-decoration: none;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.not-animated {
+  display: flex;
+  justify-content: space-around;
+}
+.animated {
+  display: flex;
+  justify-content: space-around;
+  animation-duration: 5s;
+  animation-name: roll;
+}
+
+@keyframes roll {
+  0% {
+    transform: translate(-2rem, 2rem);
+  }
+  5% {
+    transform: translate(3rem, -3rem);
+  }
+  10% {
+    transform: translate(-5rem, 5rem);
+  }
+  15% {
+    transform: translate(3rem, -3rem);
+  }
+  20% {
+    transform: translate(-2rem, 2rem);
+  }
+  100% {
+    transform: translate(0rem);
+  }
+}

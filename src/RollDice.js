@@ -12,8 +12,8 @@ const dieArray = [
 ];
 class RollDice extends Component {
   state = {
-    dieNum: dieArray[Math.floor(Math.random() * 6)],
-    dieNum2: dieArray[Math.floor(Math.random() * 6)],
+    dieNum: dieArray[Math.floor(Math.random() * dieArray.length)],
+    dieNum2: dieArray[Math.floor(Math.random() * dieArray.length)],
     isAnimating: false
   };
 
